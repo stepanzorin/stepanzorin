@@ -16,10 +16,13 @@ struct SoftwareEngineer final {
     const std::string_view country{"Russia"};
 
     static const std::size_t count_of_language_spoken{2};
-    const std::array<std::string_view, count_of_language_spoken> language_spoken{"Russian (native speaker)",
-                                                                                 "United States english"};
+    const std::array<std::string_view, count_of_language_spoken> language_spoken{
+        "Russian (native speaker)",
+        "United States english"};
 
-    void say_hi() const noexcept { fmt::print("Thanks for dropping by, hope you find some of my work interesting."); }
+    void say_hi() const noexcept {
+        fmt::print("Thanks for dropping by, hope you find some of my work interesting.");
+    }
 };
 
 }
