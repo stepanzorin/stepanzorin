@@ -14,6 +14,7 @@ public:
     void say_hi() const noexcept {
         fmt::print("Thanks for dropping by, hope you find some of my work interesting.");
     }
+
 private:
     const std::string_view name{"Stepan Zorin"};
     const std::uint8_t age{24};
@@ -23,7 +24,7 @@ private:
     static const std::size_t count_of_language_spoken{2};
     const std::array<std::string_view, count_of_language_spoken> language_spoken{
         "Russian (native speaker)",
-        "United States english"};
+        "English (United States)"};
 };
 
 } // namespace github::stepanzorin
