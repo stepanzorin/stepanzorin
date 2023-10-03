@@ -9,7 +9,12 @@
 
 namespace github::stepanzorin {
 
-struct SoftwareEngineer final {
+class SoftwareEngineer final {
+public:
+    void say_hi() const noexcept {
+        fmt::print("Thanks for dropping by, hope you find some of my work interesting.");
+    }
+private:
     const std::string_view name{"Stepan Zorin"};
     const std::uint8_t age{24};
     const bool is_male{true};
@@ -19,13 +24,9 @@ struct SoftwareEngineer final {
     const std::array<std::string_view, count_of_language_spoken> language_spoken{
         "Russian (native speaker)",
         "United States english"};
-
-    void say_hi() const noexcept {
-        fmt::print("Thanks for dropping by, hope you find some of my work interesting.");
-    }
 };
 
-}
+} // namespace github::stepanzorin
 
 using namespace github::stepanzorin;
 
